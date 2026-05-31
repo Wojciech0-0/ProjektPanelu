@@ -4,33 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
 </head>
 <body class="container min-vh-100 justify-content-center text-center">
     <div class="m-3"><h1>Produkty</h1></div>
     <div class="m-4 row p-3 bg-light shadow rounded-4">
         <h3>Dodaj produkt</h3>
-        <form action="" class="p-3 row justify-content-center align-content-center col-12">
-            <div class="col-12 col-lg-4 col-md-6 m-2 m-lg-0">Nazwa: <input class="col-7 border-0 rounded-4 shadow px-2"  type="text" id="nazwa"></div>
+        <form id="formProdukt" class="p-3 row justify-content-center align-content-center col-12">
+            <div class="col-12 col-lg-4 col-md-6 m-2 m-lg-0">Nazwa: <input class="col-7 border-0 rounded-4 shadow px-2" type="text" id="nazwa"></div>
             <div class="col-12 col-lg-4 col-md-6 m-2 m-lg-0">Kategoria: <input class="col-7 border-0 rounded-4 shadow px-2" type="text" id="kategoria"></div>
-            <div class="col-12 col-lg-4 col-md-6 m-2 m-lg-0">Cena: <input class="col-7 border-0 rounded-4 shadow px-2"  type="numbel" step="0.01" id="cena"></div>
+            <div class="col-12 col-lg-4 col-md-6 m-2 m-lg-0">Cena: <input class="col-7 border-0 rounded-4 shadow px-2" type="number" step="0.01" id="cena"></div>
             <div><input class="col-12 col-lg-4 col-md-6 m-2 mt-4 border-0 rounded-4 shadow text-bg-success" type="submit" id="dodaj" value="Dodaj"></div>
         </form>
     </div>
     <div class="d-flex"><div class="col-1"></div><div class="col-1 justify-content-end"><img class="col-5 col-md-3" src="download-removebg-preview.png" alt=""></div><input class="col-9 shadow bg-light border-0 rounded-4 px-3 py-1" type="text" id="wyszukiwarka" placeholder="Szukaj produktów"><div class="col-1"></div></div>
 
     <div class="bg-light shadow rounded-4 m-4 p-3">
-        <div><h3 id="ilosc">Liczba produktów: </h3></div>
-        <div id="przedmioty">
-            <div class="bg-secondary-subtle rounded-4 col-6 col-md-4 col-lg-3 p-3">
-                <b class="col-12 nazwa">Klawiatura</b>
-                <div><b class="col-6">Kategoria: </b>Elektronika</div>
-                <div><b class="col-6">Cena: </b>25zł</div>
-                <div class="col-12"><input class="col-10 col-md-8 rounded-4 text-bg-danger border-0 shadow my-3" type="submit" value="Usuń produkt" name="" class="usun"></div>
+        <div><h3 id="ilosc">Liczba produktów: 0</h3></div>
+        <div id="przedmioty" class="d-flex flex-wrap justify-content-center">
             </div>
-        </div>
-        
     </div>
 </body>
 </html>
