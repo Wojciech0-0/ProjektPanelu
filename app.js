@@ -56,7 +56,7 @@ function OdswiezProdukty() {
                 <div class="bg-secondary-subtle rounded-4 col-5 col-md-4 col-lg-3 p-3 m-2 text-start">
                     <b class="col-12 d-block text-center fs-5 mb-2">${produkt.Nazwa}</b>
                     <div><b>Kategoria: </b>${produkt.Kategoria}</div>
-                    <div><b>Cena: </b>${produkt.Cena} zł</div>
+                    <div><b>Cena: </b>${produkt.Cena.toFixed(2)} zł</div>
                     <div class="col-12 text-center">
                         <button class="col-12 rounded-4 text-bg-danger border-0 shadow my-3 py-1" onclick="UsunProdukt(${index})">Usuń produkt</button>
                     </div>
