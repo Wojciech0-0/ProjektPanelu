@@ -43,7 +43,7 @@ function OdswiezProdukty() {
     const przedmioty = document.getElementById('przedmioty');
     przedmioty.innerHTML = "";
 
-    const szukanaFraza = wyszukiwarka.value.toLowerCase();
+    const szukanaFraza = wyszukiwarka.value.toLowerCase().trim();
     let licznik = 0;
 
     produkty.forEach((produkt, index) => {
